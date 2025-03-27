@@ -6,8 +6,12 @@
   <style>
     /* Background Video */
     #background-video {
+        image-rendering: auto;
+        backface-visibility: hidden;
+        will-change: transform;
+        transform: translateZ(0);
       position: fixed;
-      top: -53vh;          /* crop more from top */
+      top: -60vh;          /* crop more from top */
       left: -28vw; 
       bottom: -10vh;        /* crop more from left */
       width: 155vw;        /* expand width for center recentering */
@@ -72,7 +76,7 @@
 
   <!-- Background video -->
   <video id="background-video" autoplay muted loop playsinline>
-    <source src="ORGANISM.mov" type="video/mp4">
+    <source src="ORGANISM.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
