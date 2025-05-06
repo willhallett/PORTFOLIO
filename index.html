@@ -6,10 +6,6 @@
   <style>
     /* Background Video */
     #background-video {
-      image-rendering: auto;
-      backface-visibility: hidden;
-      will-change: transform;
-      transform: translateZ(0);
       position: fixed;
       top: 0;
       left: 0;
@@ -27,35 +23,30 @@
       font-family: 'Helvetica', sans-serif;
       overflow-x: hidden;
       background: white;
+      color: whitesmoke;
     }
 
     .name {
-      margin-left: 7%;
-      margin-top: 10%;
+      margin: 10% 7% 0 7%;
       font-size: 2rem;
-      color: whitesmoke;
       font-weight: bolder;
     }
 
     .text {
-      margin: 10% 5% 0 10%;
-      font-size: 0.85rem;
-      color: whitesmoke;
+      margin: 10% 7% 0 7%;
+      font-size: 0.9rem;
       font-weight: lighter;
-      max-width: 85%;
     }
 
     .titling {
-      margin-left: 7%;
-      margin-top: 15%;
+      margin: 10% 7% 0 7%;
       font-size: 1.2rem;
-      color: whitesmoke;
-      font-weight: bold;
+      font-weight: bolder;
     }
 
     .titling a {
       display: block;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.5rem;
     }
 
     .titling img:hover {
@@ -71,28 +62,24 @@
       text-decoration: underline;
     }
 
-    @media (max-width: 768px) {
+    /* Mobile-specific adjustments */
+    @media screen and (max-width: 768px) {
       .name {
         font-size: 1.5rem;
-        margin-top: 20%;
       }
 
       .text {
-        font-size: 0.75rem;
-        margin: 15% 5% 0 7%;
+        font-size: 0.8rem;
       }
 
       .titling {
         font-size: 1rem;
-        margin-left: 5%;
-        margin-top: 10%;
       }
     }
   </style>
 </head>
 
 <body>
-
   <!-- Background video -->
   <video id="background-video" autoplay muted loop playsinline>
     <source src="video.mov" type="video/mp4">
@@ -102,6 +89,16 @@
   <div class="name">WILL HALLETT</div>
 
   <div class="text">
-    <p>
-      <!-- Mobile-optimized dummy text -->
-      !@#$%^&*()_+ !@#$%^&*()_+ !@#$%^&*()*_*_*
+    <p>!@#$%^&*()_+ !@#$%^&*()_+ ... (truncated for brevity)</p>
+  </div>
+
+  <div class="titling">
+    <a href="https://willhallett.github.io/Planet.s/"><b>Planet.s</b></a>
+    <a href="https://willhallett.github.io/SOC-A/"><b>SOC A</b></a>
+    <a href="https://willhallett.github.io/Scenario-Fi.ctions/"><b>Scenario Fi.ctions</b></a>
+    <a href="https://willhallett.github.io/DAJIBANhuts/"><b>DAJIBANhuts</b></a>
+    <a href="https://willhallett.github.io/ALGOprints/"><b>ALGO Prints</b></a>
+    <a href="https://willhallett.github.io/History-of-Dinosaurs/"><b>A History of Dinosaurs I, II, & III</b></a>
+  </div>
+</body>
+</html>
